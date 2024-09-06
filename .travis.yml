@@ -33,7 +33,7 @@ install:
 # Command to run tests
 script:
   - pytest
-  - coverage run -m pc_health_checks
+  - coverage run -m pc_status_checks
 
 after_success:
   - coveralls
