@@ -2,6 +2,7 @@
 
 
 ## Script to check computer health
+# Source: https://github.com/google/it-cert-automation/blob/master/Course3/repos/health-checks/health_checks.py
 
 
 # OS routines for NT or Posix depending on what system we're on
@@ -13,7 +14,7 @@ import shutil
 # psutil is a cross-platform library for retrieving information on running processes and system utilization (CPU, memory, disks, network, sensors) in Python.
 import psutil
 
-# provides socket operations and some related functions
+# Provides socket operations and some related functions
 import socket
 
 
