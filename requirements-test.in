@@ -1,0 +1,8 @@
+# requirements-test.in
+
+# To constrain these requirements to packages already selected in requirements.txt
+-c requirements.txt
+
+codecov
+coveralls
+pytest
