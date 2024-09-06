@@ -1,27 +1,39 @@
+# .travis.yml
+#
+# Travis CI configuration file
+
+
+# The Ubuntu 22.04 (Jammy Jellyfish) Build Environment
+dist: jammy
+
 language: python
 
-# os: osx
+# Safelist
+branches:
+  only:
+    - main
 
-python:
-  - 3.8
-  - 3.9
-#  - 3.10
-#  - 3.11
-#  - 3.12    # Current stable release for python
-#  - 3.13    # Prerelease
-#  - 3.14    # feature
-  - "nightly"    # Nightly build
+# Supported Python versions: https://devguide.python.org/versions/
+matrix:
+  include:
+    - python: 3.8
+    - python: 3.9
+    - python: 3.10
+    - python: 3.11
+    - python: 3.12    # Current stable release for python
+#    - python: 3.13    # Prerelease
+#    - python: 3.14    # Feature
+#    - python: "nightly"    # Nightly build
 
-# Command to install dependencies
+# Commands to install dependencies
 install:
-# install: skip
   - pip install -r requirements.txt
   - pip install -r requirements-test.txt
 
 # Command to run tests
-# script: skip
 script:
   - pytest
+  - coverage run -m pc_health_checks
 
 after_success:
   - coveralls
