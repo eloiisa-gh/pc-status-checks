@@ -1,0 +1,9 @@
+## requirements.in
+#
+## This file is used to generate requirements.txt
+
+## Dependencies needed for production
+psutil
+
+## Local development
+#pip-tools
