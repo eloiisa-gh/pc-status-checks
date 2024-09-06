@@ -16,13 +16,13 @@ def test_check_reboot_not_exists():
 
 def test_check_root_full():
     """Test that check_root_full returns True if the root partition is considered full."""
-    with patch("pc_health_checks.check_disk_full", return_value=True):
+    with patch("pc_status_checks.check_disk_full", return_value=True):
         assert check_root_full() is True
 
 
 def test_check_root_full_not_full():
     """Test that check_root_full returns False if the root partition is not considered full."""
-    with patch("pc_health_checks.check_disk_full", return_value=False):
+    with patch("pc_status_checks.check_disk_full", return_value=False):
         assert check_root_full() is False
 
 
