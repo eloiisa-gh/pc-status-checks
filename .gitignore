@@ -1,0 +1,16 @@
+### Python ###
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+
+# Environments
+.venv
+
+# Unit test / coverage reports
+.coverage
+
+
+### macOS ###
+
+# General
+.DS_Store
