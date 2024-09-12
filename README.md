@@ -6,6 +6,7 @@
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/eloiisa-gh/pc-status-checks)
 ![GitHub repo file or directory count](https://img.shields.io/github/directory-file-count/eloiisa-gh/pc-status-checks)
 ![GitHub repo size](https://img.shields.io/github/repo-size/eloiisa-gh/pc-status-checks)
+![GitHub License](https://img.shields.io/github/license/eloiisa-gh/pc-status-checks)
 
 ---
 
